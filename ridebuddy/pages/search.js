@@ -3,12 +3,12 @@ import tw from "tailwind-styled-components";
 import Link from "next/link";
 
 const Search = () => {
-  const [pickuplocation, setPickuplocation] = useState("");
-  const [dropofflocation, setDropofflocation] = useState("");
-
+  const [pickup, setPickuplocation] = useState("");
+  const [dropoff, setDropofflocation] = useState("");
+ 
   return (
     <Wrapper>
-      <Link href="/" passHref>
+      <Link rel="manifest" href="/" passHref>
         <ButtonContainer>
           <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
         </ButtonContainer>
@@ -22,10 +22,12 @@ const Search = () => {
         <InputBoxes>
           <Input
             placeholder="Enter pickup location"
+            value = {pickup}
             onChange={(event) => setPickuplocation(event.target.value)}
           />
           <Input
             placeholder="Where to?"
+            value = {dropoff}
             onChange={(event) => setDropofflocation(event.target.value)}
           />
         </InputBoxes>
@@ -35,17 +37,17 @@ const Search = () => {
         <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
         Saved Places (Not available)
       </SavedPlaces>
-      <Link
+      <Link rel="manifest"
         href={{
           pathname: "/confirm",
           query: {
-            pickuplocation: pickuplocation,
-            dropofflocation: dropofflocation,
+            pickup: pickup,
+            dropoff: dropoff,
           },
         }}
         passHref
       >
-        <ConfirmButtonContainer>Confirm Locations</ConfirmButtonContainer>
+        <ConfirmButtonContainer >Confirm Locations</ConfirmButtonContainer>
       </Link>
     </Wrapper>
   );

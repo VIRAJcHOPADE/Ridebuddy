@@ -25,7 +25,7 @@ export default function Home() {
         </Header>
         <ActionButtons>
         <ActionButton>
-          <Link href="/search" passHref>
+          <Link rel="manifest" href="/search" passHref>
             <ActionButton>
               <ActionButtonImage src="https://i.ibb.co/cyvcpfF/uberx.png" />
               Ride
@@ -42,7 +42,7 @@ export default function Home() {
           </ActionButton>
         </ActionButtons>
 
-        <Link href="/search" passHref>
+        <Link rel="manifest" href="/search" passHref>
           <InputButton>Where to ?</InputButton>
         </Link>
 
