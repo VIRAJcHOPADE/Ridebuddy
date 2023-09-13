@@ -105,5 +105,5 @@ bg-white flex text-l  items-center px-4 py-2
 `;
 
 const ConfirmButtonContainer = tw.div`
-bg-black flex text-xl  items-center py-2 text-white mt-4 justify-center text-center m-12 transform hover:scale-105 transition cursor-pointer
+bg-black rounded-full flex text-xl  items-center py-2 text-white mt-4 justify-center text-center m-12 transform hover:scale-105 transition cursor-pointer
 `;

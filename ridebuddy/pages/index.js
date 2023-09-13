@@ -52,11 +52,11 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
- flex flex-col h-screen  
+ flex flex-col h-screen 
 `;
 
 const ActionItems = tw.div`
- flex-1 p-4
+ flex-1 p-4 
 `;
 
 const Header = tw.div`
