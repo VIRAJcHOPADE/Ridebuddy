@@ -8,7 +8,7 @@ import { SelectedCarAmountContext } from '@/context/SelectedCarAmountContext';
 
 
 function Booking() {
-   const screenHight=window.innerHeight*0.72;
+   // const screenHight=window.innerHeight*0.72;
    const {carAmount,setCarAmount}=useContext(SelectedCarAmountContext);
 
    const router:any= useRouter()
@@ -16,7 +16,7 @@ function Booking() {
     <div className='p-5 bg-white'>
         <h2 className='text-[20px] font-semibold'>Booking</h2>
         <div className='border-[1px] p-5 
-        rounded-md' style={{height:screenHight}}>
+        rounded-md' >
         <AutocompleteAddress/>
         <Cars/>
         <Cards/>
