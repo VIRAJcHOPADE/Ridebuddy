@@ -13,7 +13,7 @@ function MapBoxRoute(props: any) {
   const geoJsonData = {
     type: "Feature",
     geometry: {
-      type: "LineString",
+      type: "Point",
       coordinates: props.coordinates,
     },
     properties: {}, // Add any properties you need here
