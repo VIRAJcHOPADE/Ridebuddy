@@ -8,7 +8,7 @@ import { SelectedCarAmountContext } from '@/context/SelectedCarAmountContext';
 
 
 function Booking() {
-   // const screenHight=window.innerHeight*0.72;
+  //  const screenHight=window.innerHeight*0.72;
    const {carAmount,setCarAmount}=useContext(SelectedCarAmountContext);
 
    const router:any= useRouter()
@@ -23,8 +23,10 @@ function Booking() {
         <button className={`w-full
          bg-yellow-400
         p-1 rounded-md
-        mt-4 ${!carAmount?'bg-gray-200':null}`}
+        mt-4
+        ${!carAmount?'bg-gray-200':null}`}
         disabled={!carAmount}
+        onClick={()=>router.push('/payment')}
         >Book</button>
         
         </div> 
