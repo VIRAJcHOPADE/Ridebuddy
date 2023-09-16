@@ -22,11 +22,11 @@ const CheckoutForm = () => {
                 amount: 58,
             }),
         });
-       const sec = await res.json();
-       console.log(sec);
+       const secretkey = await res.json();
+    //    console.log(sec);
        const {error} = await stripe.confirmPayment(
           {
-            clientSecret: sec,
+            clientSecret: secretkey,
             elements,
             confirmParams: {
                 return_url: "https://localhost:3000/",
@@ -35,14 +35,14 @@ const CheckoutForm = () => {
        );
     }
     return (
-        <div className='flex flex-col justify-center w-full mt-6'>
-            
-    <form onSubmit={handleSubmit}
+        <div className='flex flex-col justify-center 
+        items-center  w-full mt-6'>
+    <form  onSubmit={handleSubmit}
     className='max-w-md'>
         <PaymentElement/>
         <button type="submit"
         className='w-full bg-yellow-500 p-2 rounded-lg mt-2'
-         disabled={stripe || !elements}>
+         disabled={!stripe || !elements}>
             Pay
         </button>
     </form>
