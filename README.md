@@ -1,8 +1,6 @@
 # FJ-FE-R2-viraj-Chopade-Ajeenkya-dy-patil-school-of-engineering
 
-## NOT ABLE TO DEPLOY AS Vercel EDGE_FUNCTION_INVOCATION_FAILED for React 18 and Server Components experimental features.
 
-## SAME ISSUES (https://github.com/orgs/vercel/discussions/152)
 
 ## Login Page
 ![login page](https://github.com/VIRAJcHOPADE/FJ-FE-R2-viraj-Chopade-Ajeenkya-dy-patil-school-of-engineering/assets/89187084/ec7b8df1-b40e-4968-a90e-2d90e7c7570a)
